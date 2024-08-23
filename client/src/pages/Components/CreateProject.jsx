@@ -35,7 +35,7 @@ function CreateProjects() {
     }
 
     try {
-        const res = await fetch('http://localhost:5000/api/addproject', {
+        const res = await fetch('https://mern-portfolio-demo.onrender.com/api/addproject', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

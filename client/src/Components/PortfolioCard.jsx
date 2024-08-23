@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function PortfolioCard() {
     return (
@@ -11,6 +12,7 @@ function PortfolioCard() {
                 Sk Nadim
             </h3>
             <h3 className="text-xl lg:text-2xl py-3">MERN Stack Developer</h3>
+            <Link  to='/admin'>Admin Panel</Link>
         </div>
     )
 }

@@ -16,7 +16,7 @@ function AllProjects() {
   const projects = useSelector((state) => state.user.projects)
 
   const getProjects = async () => {
-    const res = await axios.get('http://localhost:5000/api/getprojects');
+    const res = await axios.get('https://mern-portfolio-demo.onrender.com/api/getprojects');
     const data = await res.data.projects;
     dispatch(setProjects(data));
     // console.log(projects);

@@ -11,14 +11,14 @@ const skills= useSelector((state)=> state.user.skills);
 
 
   const getSkills= async ()=>{
-   const res= await axios.get('http://localhost:5000/api/getskills');
+   const res= await axios.get('https://mern-portfolio-demo.onrender.com/api/getskills');
    const data=await res.data.skills;
    dispatch(setSkills(data));
    console.log(skills);
   };
 
    const deleteSkill = async (id)=>{
-      const res= await axios.delete(`http://localhost:5000/api/removeskills/${id}`);
+      const res= await axios.delete(`https://mern-portfolio-demo.onrender.com/api/removeskills/${id}`);
       const data = await res.data;
       console.log(data);
       getSkills();
